@@ -9,9 +9,9 @@ namespace E_ogrenme.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public string Index()
+        public ActionResult Index()
         {
-            return "mello kuf";
+            return View();
         }
     }
 }

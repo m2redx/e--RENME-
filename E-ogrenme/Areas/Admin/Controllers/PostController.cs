@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace E_ogrenme.Areas.Admin.Controllers
 {
-    public class AdminController : Controller
+    public class PostController : Controller
     {
         // GET: Admin/Admin
         public ActionResult Index()
