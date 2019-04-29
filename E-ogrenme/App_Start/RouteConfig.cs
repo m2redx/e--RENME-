@@ -13,11 +13,10 @@ namespace E_ogrenme
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            routes.MapRoute("Home", "", new { Controller = "Home", Action = "Index" });
+            routes.MapRoute("login", "login", new { Controller = "Auth", Action = "Login" });
+
+            
         }
     }
 }
